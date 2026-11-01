@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/app.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Task Manager</h1>
+            <p>Мои задачи</p>
+        </header>
+
+        <form id="task-form">
+            <input id="title" type="text" placeholder="Название задачи"
+                   maxlength="150" required>
+            <textarea id="description" placeholder="Описание (необязательно)"
+                      maxlength="1000"></textarea>
+            <button type="submit">Добавить задачу</button>
+        </form>
+
+        <p id="message" role="status"></p>
+        <section id="tasks" aria-label="Список задач"></section>
+    </main>
+</body>
+</html>
